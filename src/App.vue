@@ -1,9 +1,15 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import Header from './components/root/Header.vue'
+  import Hero from './components/root/Hero.vue'
+  import Main from './components/main/Main.vue'
+  import Footer from './components/root/Footer.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <Header />
+  <Hero />
+  <Main />
+  <Footer />
 </template>
 
 <style lang="css">

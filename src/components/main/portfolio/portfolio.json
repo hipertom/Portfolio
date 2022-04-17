@@ -1,0 +1,64 @@
+[{
+    "filter": "filter-app",
+    "title": "App 1",
+    "desc": "App 1",
+    "external": "https://google.com",
+    "imgName": "portfolio-1.jpg"
+  },
+  {
+    "filter": "filter-web",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-2.jpg"
+  },
+  {
+    "filter": "filter-app",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-3.jpg"
+  },
+  {
+    "filter": "filter-card",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-4.jpg"
+  },
+  {
+    "filter": "filter-web",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-5.jpg"
+  },
+  {
+    "filter": "filter-app",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-6.jpg"
+  },
+  {
+    "filter": "filter-card",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-7.jpg"
+  },
+  {
+    "filter": "filter-card",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-8.jpg"
+  },
+  {
+    "filter": "filter-web",
+    "title": "Titel",
+    "desc": "Omschrijving",
+    "external": "https://google.com",
+    "imgName": "portfolio-9.jpg"
+  }
+]
