@@ -1,21 +1,20 @@
+<script setup>
+  import Header from './components/root/Header.vue'
+  import Hero from './components/root/Hero.vue'
+  import Main from './components/main/Main.vue'
+  import Footer from './components/root/Footer.vue'
+</script>
+
 <template>
-  <Nav />
+  <Header />
   <Hero />
-  <Body />
-  <CallToAction />
+  <Main />
   <Footer />
 </template>
 
-<script setup>
-  import Nav from './components/Nav.vue';
-  import Hero from './components/Hero.vue';
-  import Body from './components/Body.vue';
-  import CallToAction from './components/CallToAction.vue';
-  import Footer from './components/Footer.vue';
-</script>
-
-<style>
-  .gradient {
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-  }
+<style lang="css">
+  @import 'aos/dist/aos.css';
+  @import 'bootstrap/dist/css/bootstrap.min.css';
+  @import 'bootstrap-icons/font/bootstrap-icons.css';
+  @import './assets/css/style.css';
 </style>
