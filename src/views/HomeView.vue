@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import ProjectItem from "../components/ProjectItem.vue";
+import PageHeader from "../components/PageHeader.vue";
 </script>
 
 <template>
+  <PageHeader />
   <main>
-    <TheWelcome />
+    <ProjectItem />
   </main>
 </template>
