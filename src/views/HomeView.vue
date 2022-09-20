@@ -1,11 +1,11 @@
 <script setup>
-import ProjectItem from "../components/ProjectItem.vue";
 import PageHeader from "../components/PageHeader.vue";
+import ProjectList from "../components/ProjectList.vue";
 </script>
 
 <template>
   <PageHeader />
   <main>
-    <ProjectItem />
+    <ProjectList />
   </main>
 </template>
