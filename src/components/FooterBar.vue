@@ -3,7 +3,9 @@
     <div class="container">
       <div class="d-flex flex-row justify-content-between">
         <div class="align-self-center">logo</div>
-        <div class="align-self-center">&copy; 2022-{{ year }} Tom Grootjans. All rights reserved</div>
+        <div class="align-self-center">
+          &copy; 2022-{{ year }} Tom Grootjans. All rights reserved
+        </div>
         <div class="align-self-center">
           <SocialIcons />
         </div>
