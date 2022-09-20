@@ -1,0 +1,10 @@
+@import "./_globals/variables.scss";
+@import "base.scss";
+@import "typography.scss";
+
+figure {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
