@@ -6,9 +6,7 @@ export const projectsQuery = `
         id
       }
       title
-      description {
-        json
-      },
+      desc
       link
       image {
         fileName
@@ -17,6 +15,12 @@ export const projectsQuery = `
         width
         height
         size
+      }
+			contentfulMetadata {
+        tags {
+          id
+          name
+        }
       }
     }
   }
