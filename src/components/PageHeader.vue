@@ -9,7 +9,9 @@
           </ul>
         </nav>
 
-        <div class="hero flex-fill d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="hero flex-fill d-flex flex-column justify-content-center align-items-center"
+        >
           <div class="d-flex flex-column justify-content-center">
             <h1>Tom Grootjans</h1>
             <p>
@@ -27,9 +29,10 @@
           </ul>
         </nav>
 
-        <div class="header-icons flex-fill d-flex flex-column justify-content-end align-items-end">
-
-          <HeaderIconsVue />
+        <div
+          class="header-icons flex-fill d-flex flex-column justify-content-end align-items-end"
+        >
+          <HeroSvgs />
         </div>
       </div>
     </div>
@@ -37,7 +40,7 @@
 </template>
 
 <script setup>
-import HeaderIconsVue from "../assets/HeaderIcons.vue";
+import HeroSvgs from "~/assets/HeroSvgs.vue";
 </script>
 
 <style lang="scss">
@@ -54,7 +57,7 @@ import HeaderIconsVue from "../assets/HeaderIcons.vue";
 }
 
 .header-right {
-  background-color: #18191f;
+  background-color: $primary-color;
 
   svg {
     width: 110%;
