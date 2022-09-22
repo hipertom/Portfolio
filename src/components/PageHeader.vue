@@ -1,14 +1,7 @@
 <template>
   <div class="container-fluid">
-    <div class="row header">
+    <div class="row page-header">
       <div class="col-8 header-left d-flex flex-column align-items-stretch">
-        <nav class="align-self-start">
-          <ul>
-            <li>logo</li>
-            <li>Tom Grootjans</li>
-          </ul>
-        </nav>
-
         <div
           class="hero flex-fill d-flex flex-column justify-content-center align-items-center"
         >
@@ -21,16 +14,9 @@
           </div>
         </div>
       </div>
-      <div class="col-4 header-right d-flex flex-column align-items-stretch">
-        <nav class="align-self-start">
-          <ul>
-            <li>logo</li>
-            <li>Tom Grootjans</li>
-          </ul>
-        </nav>
-
+      <div class="col-4 page-header-right d-flex flex-column align-items-stretch">
         <div
-          class="header-icons flex-fill d-flex flex-column justify-content-end align-items-end"
+          class="page-header-icons flex-fill d-flex flex-column justify-content-end align-items-end"
         >
           <HeroSvgs />
         </div>
@@ -44,19 +30,17 @@ import HeroSvgs from "~/assets/HeroSvgs.vue";
 </script>
 
 <style lang="scss">
-.header {
-  // height: 75vh;
-
+.page-header {
   > div {
     margin: 0;
     padding: 0;
   }
 }
 
-.header-left {
+.page-header-left {
 }
 
-.header-right {
+.page-header-right {
   background-color: $primary-color;
 
   svg {
