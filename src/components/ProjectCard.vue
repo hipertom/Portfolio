@@ -5,8 +5,8 @@
       <img v-else src="../assets/iphone-x.png" alt="" srcset="" />
       <img :src="project.image.url" alt="" />
     </figure>
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.desc }}</p>
+    <h5>{{ project.title }}</h5>
+    <p class="lead">{{ project.desc }}</p>
   </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss">
 div.project-card {
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 
   // Baseline for figure
   figure {

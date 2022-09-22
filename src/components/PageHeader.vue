@@ -7,14 +7,16 @@
         >
           <div class="d-flex flex-column justify-content-center">
             <h1>Tom Grootjans</h1>
-            <p>
+            <p class="lead">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
               voluptatem dicta facilis nam quod repellat.
             </p>
           </div>
         </div>
       </div>
-      <div class="col-4 page-header-right d-flex flex-column align-items-stretch">
+      <div
+        class="col-4 page-header-right d-flex flex-column align-items-stretch"
+      >
         <div
           class="page-header-icons flex-fill d-flex flex-column justify-content-end align-items-end"
         >
