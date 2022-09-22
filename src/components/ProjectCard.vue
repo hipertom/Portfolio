@@ -1,7 +1,8 @@
 <template>
   <div class="col-4 project-card" :class="randomColor">
-    <figure>
-      <img src="../assets/macbook.png" alt="" srcset="" />
+    <figure :class="{ 'landscape-figure': landscapeImage }">
+      <img v-if="landscapeImage" src="../assets/macbook.png" alt="" srcset="" />
+      <img v-else src="../assets/iphone-x.png" alt="" srcset="" />
       <img :src="project.image.url" alt="" />
     </figure>
     <h3>{{ project.title }}</h3>
@@ -28,6 +29,9 @@ export default {
       let rng = Math.floor(Math.random() * this.randomColors.length);
       return this.randomColors[rng];
     },
+    landscapeImage() {
+      return this.project.image.width > this.project.image.height;
+    },
   },
 };
 </script>
@@ -36,10 +40,38 @@ export default {
 div.project-card {
   margin-bottom: 40px;
 
+  // Baseline for figure
   figure {
-    background-color: #a0dcff;
     border-radius: 8px;
     overflow: hidden;
+
+    height: 400px;
+  }
+
+  // Phone figure
+  figure:not(.landscape-figure) {
+    padding: 40px 60px 0 60px;
+
+    img {
+      z-index: 2;
+      position: relative;
+      top: 0;
+      left: 0;
+      &:nth-child(2) {
+        $spacing-left: 80px;
+
+        position: absolute;
+        top: 55px;
+        left: $spacing-left;
+        width: calc(100% - $spacing-left * 2);
+
+        z-index: 1;
+      }
+    }
+  }
+
+  // Landscape figure
+  figure.landscape-figure {
     padding: 40px 0 40px 20px;
 
     img {
