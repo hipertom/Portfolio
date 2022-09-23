@@ -4,6 +4,7 @@
       <div class="col-8 header-left d-flex flex-column align-items-stretch">
         <div
           class="hero flex-fill d-flex flex-column justify-content-center align-items-center"
+          id="about"
         >
           <div class="d-flex flex-column justify-content-center">
             <h1>Tom Grootjans</h1>
@@ -28,14 +29,14 @@
 </template>
 
 <script setup>
-import HeroSvgs from "~/assets/HeroSvgs.vue";
+import HeroSvgs from "@/assets/HeroSvgs.vue";
 </script>
 
 <style lang="scss">
 .page-header {
   > div {
     margin: 0;
-    padding: 0;
+    padding: 100px 0 0 0;
   }
 }
 
