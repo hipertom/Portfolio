@@ -2,13 +2,8 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
-            alt=""
-            width="30"
-            height="24"
-          />
+        <a class="navbar-brand" href="#about">
+          <img src="@/assets/tom.webp" alt="Tom Grootjans" />
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -17,7 +12,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Project</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
@@ -27,17 +22,6 @@
         </div>
       </div>
     </nav>
-    <!-- <div class="container">
-      <div class="d-flex flex-row justify-content-between">
-        <div class="align-self-center">
-          <nav class="navbar">
-          </nav>
-        </div>
-        <div class="align-self-center">
-          <SocialIcons />
-        </div>
-      </div>
-    </div> -->
   </header>
 </template>
 
@@ -49,6 +33,13 @@ header {
   position: absolute;
   z-index: 2;
   width: 100%;
+
+  .navbar-brand {
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
 
   .nav-link {
     color: $primary-font-color;
