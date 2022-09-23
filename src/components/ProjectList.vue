@@ -1,5 +1,5 @@
 <template>
-  <div class="container project-list">
+  <div class="container project-list" id="projects">
     <div class="row">
       <div class="col-12">
         <h2>Selected works</h2>

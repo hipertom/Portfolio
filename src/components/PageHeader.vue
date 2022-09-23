@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" id="about">
     <div class="row page-header">
       <div class="col-8 header-left d-flex flex-column align-items-stretch">
         <div
@@ -35,7 +35,7 @@ import HeroSvgs from "~/assets/HeroSvgs.vue";
 .page-header {
   > div {
     margin: 0;
-    padding: 0;
+    padding: 100px 0 0 0;
   }
 }
 
