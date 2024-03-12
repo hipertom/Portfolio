@@ -1,45 +1,44 @@
 <script setup>
 import ProjectItem from '../elements/ProjectItem.vue';
 import FilterLink from '../elements/FilterLink.vue';
-
 import { store } from '@/store.js'
 
-const projectList = [
-{
-  id: 1,
-  tag: 'drupal',
-  title: "onsaanbod.nl",
-  description: "Drupal website",
-  image: 'project-1.jpg',
-},
-{
-  id: 2,
-  tag: 'drupal',
-  title: "de Nobel",
-  description: "Drupal website",
-  image: 'project-2.jpg',
-},
-{
-  id: 3,
-  tag: 'drupal',
-  title: "Stichting lezen en Schrijven",
-  description: "Meerdere website op Drupal",
-  image: 'project-3.jpg',
-},
-{
-  id: 4,
-  tag: 'laravel',
-  title: "Stichting Matchis",
-  description: "Donor portaal in Laravel en Vue.js",
-  image: 'project-4.jpg',
-},
-{
-  id: 5,
-  tag: 'laravel',
-  title: "Sexy & Safe",
-  description: "Laravel website",
-  image: 'project-5.jpg',
-}]
+const projectList = [{
+    id: 1,
+    tag: 'drupal',
+    title: "onsaanbod.nl",
+    description: "Drupal website",
+    image: 'project-1.jpg',
+  },
+  {
+    id: 2,
+    tag: 'drupal',
+    title: "de Nobel",
+    description: "Drupal website",
+    image: 'project-2.jpg',
+  },
+  {
+    id: 3,
+    tag: 'laravel',
+    title: "Stichting lezen en Schrijven",
+    description: "Meerdere website op Drupal",
+    image: 'project-3.jpg',
+  },
+  {
+    id: 4,
+    tag: 'drupal',
+    title: "Stichting Matchis",
+    description: "Donor portaal in Laravel en Vue.js",
+    image: 'project-4.jpg',
+  },
+  {
+    id: 5,
+    tag: 'laravel',
+    title: "Sexy & Safe",
+    description: "Laravel website",
+    image: 'project-5.jpg',
+  }
+]
 
 </script>
 
@@ -62,20 +61,19 @@ const projectList = [
 
     <div class="container">
 
-        <TransitionGroup
-          name="list"
-          tag="div"
-          class="gallery_f_inner row imageGallery1"
-        >
-          <template v-for="(project) in projectList" :key="project.id">
-            <ProjectItem v-bind="project" />
-          </template>
+      <TransitionGroup name="list" tag="div" class="gallery_f_inner row imageGallery1">
 
-        </TransitionGroup>
+        <template v-for="(project) in projectList" :key="project.id">
+          <ProjectItem v-bind="project" v-if="store.filterValue == project.tag || store.filterValue == '*'"/>
+        </template>
+
+      </TransitionGroup>
 
       <div class="more_btn">
         <a class="main_btn" href="#">Load More Items</a>
       </div>
+
     </div>
+
   </section>
-  </template>
+</template>
