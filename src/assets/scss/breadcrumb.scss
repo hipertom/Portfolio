@@ -21,33 +21,32 @@
 		width: 100%;
 		min-height: 700px;
 		display: flex;
-//		.overlay{
-//			background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
-//			position: absolute;
-//			left: 0;
-//			right: 0;
-//			top: 0;
-//			height: 121%;
-//			bottom: 0;
-//			z-index: -1;
-//		}
+
 		.banner_content{
 			color: $dip;
 			vertical-align: middle;
 			align-self: center;
 			text-align: left;
 			.media{
-				.d-flex{
+				.media-profile{
+          display: flex;
+          flex: 3;
 					padding-right: 125px;
+
+          img {
+            border-radius: 12px;
+            max-width: 100%;
+          }
 				}
 				.media-body{
+          flex: 2;
 					vertical-align: middle;
 					align-self: center;
 				}
 			}
 		}
-	}	
-	
+	}
+
 }
 
 .blog_banner{
@@ -58,7 +57,7 @@
 	margin-bottom: 0px;
 	.banner_inner{
 		background: #04091e;
-		position: relative; 
+		position: relative;
 		overflow: hidden;
 		width: 100%;
 		min-height: 780px;
@@ -81,7 +80,7 @@
 				font-size: 60px;
 				font-weight: bold;
 				font-family: $hee;
-				line-height: 66px; 
+				line-height: 66px;
 				margin-bottom: 15px;
 				text-transform: uppercase;
 			}
@@ -162,7 +161,7 @@
 						margin-right: 0px;
 						&:before{
 							display: none;
-						}	
+						}
 					}
 					&:hover{
 						color: $baseColor;
