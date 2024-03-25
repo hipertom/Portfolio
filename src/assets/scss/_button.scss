@@ -2,8 +2,8 @@
 ============================================================================================ */
 .main_btn{
 	display: inline-block;
-	background-image: linear-gradient(to right, #766dff 0%, #86e8ff 48%, #766dff 100%);
-    background-size: 200% auto;
+  @include background-gradient;
+  background-size: 200% auto;
 	padding: 0px 40px;
 	color: #fff;
 	font-family: $rob;
@@ -84,9 +84,7 @@
 	cursor: pointer;
 	@include transition;
 	&:hover{
-		background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-		background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-		background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+		@include background-gradient;
 		color: #fff;
 		border: none;
 	}

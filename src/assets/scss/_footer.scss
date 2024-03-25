@@ -4,7 +4,7 @@
 	background: #000;
 }
 .footer_inner{
-	
+
 }
 .f_widget{}
 .f_title{
@@ -64,9 +64,7 @@
 		}
 		.sub-btn{
 			border-radius: 0px;
-			background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-			background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-			background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+			@include background-gradient;
 			outline: none !important;
 			box-shadow: none !important;
 			padding: 0px;
