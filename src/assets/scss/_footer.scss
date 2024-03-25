@@ -1,117 +1,188 @@
-/* Footer Area css
-============================================================================================ */
-.footer_area{
-	background: #000;
+// /* Footer Area css
+// ============================================================================================ */
+// .footer_area{
+// 	background: #000;
+// }
+// .footer_inner{
+
+// }
+// .f_widget{}
+// .f_title{
+// 	margin-bottom: 35px;
+// 	h3{
+// 		color: #fff;
+// 		font-size: 18px;
+// 		font-weight: bold;
+// 		font-family: $hee;
+// 		margin-bottom: 0px;
+// 	}
+// }
+// .ab_widget{
+// 	p{
+// 		font-size: 14px;
+// 		line-height: 24px;
+// 		font-family: $rob;
+// 		color: $pfont;
+// 		margin-bottom: 30px;
+// 		a{
+// 			color: $baseColor;
+// 		}
+// 		& + p{
+// 			margin-bottom: 0px;
+// 		}
+// 	}
+// }
+// .news_widget{
+// 	padding-right: 15px;
+// 	p{
+// 		font-size: 14px;
+// 		line-height: 24px;
+// 		font-family: $rob;
+// 		color: $pfont;
+// 		margin-bottom: 15px;
+// 	}
+// 	.input-group{
+// 		input{
+// 			height: 40px;
+// 			background: transparent;
+// 			border-radius: 0px;
+// 			width: 80%;
+// 			border: none;
+// 			padding: 0px 15px;
+// 			border: 1px solid #1e233b;
+// 			font-size: 14px;
+// 			font-family: $rob;
+// 			color: #cccccc;
+// 			outline: none;
+// 			box-shadow: none;
+// 			@include placeholder{
+// 				font-size: 14px;
+// 				font-family: $rob;
+// 				font-weight: normal;
+// 				color: #cccccc;
+// 			}
+// 		}
+// 		.sub-btn{
+// 			border-radius: 0px;
+// 			@include background-gradient;
+// 			outline: none !important;
+// 			box-shadow: none !important;
+// 			padding: 0px;
+// 			border: none;
+// 			width: 42px;
+// 			cursor: pointer;
+// 			color: #fff;
+// 		}
+// 	}
+// }
+// .social_widget{
+// 	p{
+// 		font-size: 14px;
+// 		line-height: 24px;
+// 		font-family: $rob;
+// 		color: $pfont;
+// 		margin-bottom: 10px;
+// 	}
+// 	.list{
+// 		li{
+// 			margin-right: 17px;
+// 			display: inline-block;
+// 			a{
+// 				color: #cccccc;
+// 				font-size: 14px;
+// 				@include transition;
+// 			}
+// 			&:last-child{
+// 				margin-right: 0px;
+// 			}
+// 			&:hover{
+// 				a{
+// 					color: $baseColor;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .copy_right_text{
+// 	text-align: center;
+// 	margin-top: 60px;
+// 	p{
+// 		a{
+// 			color: $baseColor;
+// 		}
+// 	}
+// }
+
+// /* End Footer Area css
+// ============================================================================================ */
+
+:root {
+  --m: 4rem;
 }
-.footer_inner{
+
+footer {
+  background-color: black;
+  color: white;
+  z-index: 10;
+  width: 100%;
+
+  padding: 5rem 0;
+
+  .col {
+    padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+  }
+
+  .footer-card {
+    background-color: #121212;
+    border-radius: calc(0.5 * var(--m))
+  }
+
+  img {
+    height: calc(0.3 * var(--m));
+    object-fit: cover;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+  }
+
+  .link {
+    width: calc(0.8 * var(--m));
+    height: calc(0.8 * var(--m));
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: calc(0.1 * var(--m));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    :root {
+      --m: 3rem;
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {
+    footer {
+      flex-direction: column;
+      padding: 5rem 20vw;
+    }
+
+    .col {
+      width: 100%;
+    }
+  }
 
 }
-.f_widget{}
-.f_title{
-	margin-bottom: 35px;
-	h3{
-		color: #fff;
-		font-size: 18px;
-		font-weight: bold;
-		font-family: $hee;
-		margin-bottom: 0px;
-	}
-}
-.ab_widget{
-	p{
-		font-size: 14px;
-		line-height: 24px;
-		font-family: $rob;
-		color: $pfont;
-		margin-bottom: 30px;
-		a{
-			color: $baseColor;
-		}
-		& + p{
-			margin-bottom: 0px;
-		}
-	}
-}
-.news_widget{
-	padding-right: 15px;
-	p{
-		font-size: 14px;
-		line-height: 24px;
-		font-family: $rob;
-		color: $pfont;
-		margin-bottom: 15px;
-	}
-	.input-group{
-		input{
-			height: 40px;
-			background: transparent;
-			border-radius: 0px;
-			width: 80%;
-			border: none;
-			padding: 0px 15px;
-			border: 1px solid #1e233b;
-			font-size: 14px;
-			font-family: $rob;
-			color: #cccccc;
-			outline: none;
-			box-shadow: none;
-			@include placeholder{
-				font-size: 14px;
-				font-family: $rob;
-				font-weight: normal;
-				color: #cccccc;
-			}
-		}
-		.sub-btn{
-			border-radius: 0px;
-			@include background-gradient;
-			outline: none !important;
-			box-shadow: none !important;
-			padding: 0px;
-			border: none;
-			width: 42px;
-			cursor: pointer;
-			color: #fff;
-		}
-	}
-}
-.social_widget{
-	p{
-		font-size: 14px;
-		line-height: 24px;
-		font-family: $rob;
-		color: $pfont;
-		margin-bottom: 10px;
-	}
-	.list{
-		li{
-			margin-right: 17px;
-			display: inline-block;
-			a{
-				color: #cccccc;
-				font-size: 14px;
-				@include transition;
-			}
-			&:last-child{
-				margin-right: 0px;
-			}
-			&:hover{
-				a{
-					color: $baseColor;
-				}
-			}
-		}
-	}
-}
-.copy_right_text{
-	text-align: center;
-	margin-top: 60px;
-	p{
-		a{
-			color: $baseColor;
-		}
-	}
-}
-
-/* End Footer Area css
-============================================================================================ */

@@ -1,55 +1,31 @@
 <template>
-  <footer class="footer_area p_120">
+  <footer id="footer">
     <div class="container">
-      <div class="row footer_inner">
-        <div class="col-lg-5 col-sm-6">
-          <aside class="f_widget ab_widget">
-            <div class="f_title">
-              <h3>About Me</h3>
-            </div>
-            <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
-              improving your skills,</p>
-            <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy; [year] All rights reserved | This template is made with <i class="fa fa-heart-o"
-                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </aside>
+      <div class="row gx-5">
+        <div class="col">
+          <h3>CoolSite</h3>
+          <p>Made with <span style="color: #BA6573;">❤</span> by Jux</p>
+          <div class="social">
+            <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+            <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+            <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+          </div>
+          <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
         </div>
-        <div class="col-lg-5 col-sm-6">
-          <aside class="f_widget news_widget">
-            <div class="f_title">
-              <h3>Newsletter</h3>
-            </div>
-            <p>Stay updated with our latest trends</p>
-            <div id="mc_embed_signup">
-              <form target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get" class="subscribe_form relative">
-                <div class="input-group d-flex flex-row">
-                  <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Email Address '" required="" type="email">
-                  <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
-                </div>
-                <div class="mt-10 info"></div>
-              </form>
-            </div>
-          </aside>
+        <div class="col footer-card">
+          <p>About</p>
+          <p>Our mission</p>
+          <p>Privacy Policy</p>
+          <p>Terms of service</p>
         </div>
-        <div class="col-lg-2">
-          <aside class="f_widget social_widget">
-            <div class="f_title">
-              <h3>Follow Me</h3>
-            </div>
-            <p>Let us be social</p>
-            <ul class="list">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
-          </aside>
+        <div class="col footer-card">
+          <p>Services</p>
+          <p>Products</p>
+          <p>Join our team</p>
+          <p>Partner with us</p>
         </div>
       </div>
     </div>
