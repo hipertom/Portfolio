@@ -3,6 +3,13 @@ import ProjectItem from '../elements/ProjectItem.vue';
 import FilterLink from '../elements/FilterLink.vue';
 import { store } from '@/store.js'
 
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  store.getProjects();
+})
+
+
 const projectList = [{
     id: 1,
     tag: 'drupal',
@@ -61,13 +68,20 @@ const projectList = [{
 
     <div class="container">
 
-      <TransitionGroup name="list" tag="div" class="gallery_f_inner row imageGallery1">
 
-        <template v-for="(project) in projectList" :key="project.id">
-          <ProjectItem v-bind="project" v-if="store.filterValue == project.tag || store.filterValue == '*'"/>
-        </template>
+      <div v-if="store.projects.error">Oops! Error encountered: {{ store.projects.error.message }}</div>
 
-      </TransitionGroup>
+      <template v-else-if="store.projects.data">
+        <TransitionGroup name="list" tag="div" class="gallery_f_inner row imageGallery1">
+
+          <template v-for="(project) in store.projects.data" :key="project.sys.id">
+            <ProjectItem v-bind="project" v-if="store.filterValue == project.tag || store.filterValue == '*'"/>
+          </template>
+
+          </TransitionGroup>
+      </template>
+
+      <div v-else>Loading...</div>
 
       <div class="more_btn">
         <a class="main_btn" href="#">Load More Items</a>
