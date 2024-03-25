@@ -1,5 +1,11 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import { faCakeCandles, faEarthEurope, faLanguage, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
 
 let intros = [
   "They say the best things in life happen behind the scenes. Well, I'm the one behind the scenes building the APIs and databases that power your favorite apps. Want to peek under the hood?",
@@ -57,15 +63,14 @@ function rand(previous, range) {
                 </div>
 
                 <ul class="list basic_info">
-                  <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-                  <li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-                  <li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-                  <li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
+                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faCakeCandles" /></span> 29 years old</li>
+                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faLocationDot" />  </span> Zoetermeer</li>
+                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faEarthEurope" />  </span> The Netherlands</li>
+                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faLanguage" />  </span> Dutch & English</li>
                 </ul>
                 <ul class="list personal_social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><FontAwesomeIcon :icon="faLinkedin" /></a></li>
+                  <li><a href="#"><FontAwesomeIcon :icon="faGithub" /></a></li>
                 </ul>
               </div>
             </div>
