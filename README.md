@@ -1,6 +1,30 @@
-# portfolio
+# Portfolio - Tom Grootjans
 
-This template should help get you started developing with Vue 3 in Vite.
+`main` branch: [tomgrootjans.nl](https://tomgrootjans.nl)
+<br>
+`develop` branch: [dev.tomgrootjans.nl](https://dev.tomgrootjans.nl)
+
+## Tech stack
+
+### Frontend
+- VueJS
+- Bootstrap
+
+### Backend
+- Contentful CMS
+
+### Infrastructure
+- DigitalOcean App Platform | build and deploy
+- Cloudflare Application Security & Performance
+- Cloudflare R2 | Distributed object storage
+- Cloudflare CDN | Content delivery network
+- DigitalOcean Functions | Serverless Computing
+
+### Tools
+- [ScreenshotOne](https://screenshotone.com/docs)
+
+
+
 
 ## Recommended IDE Setup
 

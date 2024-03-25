@@ -34,7 +34,7 @@
 	border-radius: 5px;
 	i{
 		font-size: 24px;
-		background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
+		@include background-gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -86,9 +86,7 @@
 					border-radius: 5px;
 					vertical-align: middle;
 					align-self: center;
-					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					@include background-gradient;
 				}
 			}
 		}
@@ -101,9 +99,7 @@
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area{
-	background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-	background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	@include background-gradient;
 }
 .tabs_inner{
 	.nav.nav-tabs{
@@ -280,7 +276,7 @@
 		background: #fff;
 		i{
 			&:before{
-				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				@include background-gradient;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 			}
@@ -378,9 +374,7 @@
 			}
 			&:hover{
 				a{
-					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					@include background-gradient;
 				}
 			}
 		}

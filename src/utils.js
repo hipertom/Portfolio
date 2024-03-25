@@ -1,3 +1,3 @@
-export function img(filename) {
-  return new URL(`./assets/img/gallery/${filename}`, import.meta.url)
+export function projectImg(filename) {
+  return new URL(`./screenshots/${filename}.jpg`, 'https://cdn.tomgrootjans.nl')
 }

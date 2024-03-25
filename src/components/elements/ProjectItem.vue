@@ -1,12 +1,10 @@
 <script setup>
-import { img } from "@/utils.js";
+import { projectImg } from "@/utils.js";
 
 defineProps({
-  id: Number,
-  tag: String,
-  title: String,
-  description: String,
-  image: String,
+  metadata: Object,
+  sys: Object,
+  fields: Object,
 })
 
 </script>
@@ -15,12 +13,12 @@ defineProps({
 <div class="col-lg-4 col-md-4 col-sm-6" >
   <div class="h_gallery_item">
     <div class="g_img_item">
-      <img class="img-fluid" :src="img(image)" alt="">
-      <a class="light" href="img/gallery/project-1.jpg"><img src="@/assets/img/gallery/icon.png" alt=""></a>
+      <img class="img-fluid" :src="projectImg(sys.id)" alt="">
+      <a class="light" :href="fields.link" target="_blank"><img src="@/assets/img/gallery/icon.png" alt=""></a>
     </div>
     <div class="g_item_text">
-      <h4>{{ title }}</h4>
-      <p>{{ description }}</p>
+      <h4>{{ fields.title }}</h4>
+      <p>{{ fields.desc }}</p>
     </div>
   </div>
 </div>
