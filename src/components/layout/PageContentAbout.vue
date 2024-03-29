@@ -4,7 +4,7 @@ import SkillElement from '../elements/SkillElement.vue';
 </script>
 
 <template>
-  <section class="welcome_area p_120">
+  <section class="welcome_area p_120" id="about">
     <div class="container">
       <div class="row welcome_inner">
         <div class="col-lg-6">
