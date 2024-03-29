@@ -50,7 +50,7 @@ const projectList = [{
 </script>
 
 <template>
-  <section class="home_gallery_area p_120">
+  <section class="home_gallery_area p_120" id="projects">
     <div class="container">
       <div class="main_title">
         <h2>Featured projects</h2>

@@ -11,7 +11,7 @@ function setTab(state) {
 </script>
 
 <template>
-  <section class="mytabs_area p_120">
+  <section class="mytabs_area p_120" id="resume">
     <div class="container">
       <div class="tabs_inner">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
