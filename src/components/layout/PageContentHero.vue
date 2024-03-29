@@ -1,11 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
+import SocialIcons from "./../elements/SocialIcons.vue"
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
 import { faCakeCandles, faEarthEurope, faLanguage, faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-
 
 let intros = [
   "They say the best things in life happen behind the scenes. Well, I'm the one behind the scenes building the APIs and databases that power your favorite apps. Want to peek under the hood?",
@@ -68,10 +65,8 @@ function rand(previous, range) {
                   <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faEarthEurope" />  </span> The Netherlands</li>
                   <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faLanguage" />  </span> Dutch & English</li>
                 </ul>
-                <ul class="list personal_social">
-                  <li><a href="#"><FontAwesomeIcon :icon="faLinkedin" /></a></li>
-                  <li><a href="#"><FontAwesomeIcon :icon="faGithub" /></a></li>
-                </ul>
+
+                <SocialIcons />
               </div>
             </div>
           </div>

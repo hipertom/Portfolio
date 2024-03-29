@@ -1,32 +1,22 @@
+<script setup>
+import SocialIcons from "./../elements/SocialIcons.vue"
+
+</script>
+
 <template>
   <footer id="footer">
     <div class="container">
-      <div class="row gx-5">
+      <div class="row">
+
         <div class="col">
-          <h3>CoolSite</h3>
-          <p>Made with <span style="color: #BA6573;">❤</span> by Jux</p>
-          <div class="social">
-            <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
-                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
-            <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
-                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
-            <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
-                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
-          </div>
+          <h3>Portfolio</h3>
+          <p>Made with <span style="color: #BA6573;">❤</span> by Tom</p>
+
+          <SocialIcons />
+
           <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
         </div>
-        <div class="col footer-card">
-          <p>About</p>
-          <p>Our mission</p>
-          <p>Privacy Policy</p>
-          <p>Terms of service</p>
-        </div>
-        <div class="col footer-card">
-          <p>Services</p>
-          <p>Products</p>
-          <p>Join our team</p>
-          <p>Partner with us</p>
-        </div>
+
       </div>
     </div>
   </footer>
