@@ -44,7 +44,7 @@ function rand(previous, range) {
         <div class="banner_content">
           <div class="media">
             <div class="media-profile">
-              <img src="@/assets/img/tom-grootjans.png" alt="">
+              <img src="@/assets/img/tom-grootjans.jpeg" alt="">
             </div>
             <div class="media-body">
               <div class="personal_text">
