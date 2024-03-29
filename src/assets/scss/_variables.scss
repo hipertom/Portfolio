@@ -17,10 +17,7 @@ $pfont: #777777;
 }
 
 @mixin background-gradient {
-  // background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-  // background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-  // background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-  background-image: -moz-linear-gradient(120deg, #ff8064, #725bdc);
+  background-image: -moz-linear-gradient(120deg, #ff8064, #725bdc,);
   background-image: -webkit-linear-gradient(120deg, #ff8064, #725bdc);
   background-image: -ms-linear-gradient(120deg, #ff8064, #725bdc);
 }

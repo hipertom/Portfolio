@@ -33,7 +33,7 @@ onMounted(() => {
       <div v-if="store.projects.error">Oops! Error encountered: {{ store.projects.error.message }}</div>
 
       <template v-else-if="store.projects.data">
-        <TransitionGroup name="list" tag="div" class="gallery_f_inner row imageGallery1">
+        <TransitionGroup name="list" tag="div" class="row">
 
           <template v-for="(project) in store.projects.data" :key="project.sys.id">
             <ProjectItem v-bind="project" v-if="store.filterValue == project.tag || store.filterValue == '*'"/>
