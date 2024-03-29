@@ -9,44 +9,6 @@ onMounted(() => {
   store.getProjects();
 })
 
-
-const projectList = [{
-    id: 1,
-    tag: 'drupal',
-    title: "onsaanbod.nl",
-    description: "Drupal website",
-    image: 'project-1.jpg',
-  },
-  {
-    id: 2,
-    tag: 'drupal',
-    title: "de Nobel",
-    description: "Drupal website",
-    image: 'project-2.jpg',
-  },
-  {
-    id: 3,
-    tag: 'laravel',
-    title: "Stichting lezen en Schrijven",
-    description: "Meerdere website op Drupal",
-    image: 'project-3.jpg',
-  },
-  {
-    id: 4,
-    tag: 'drupal',
-    title: "Stichting Matchis",
-    description: "Donor portaal in Laravel en Vue.js",
-    image: 'project-4.jpg',
-  },
-  {
-    id: 5,
-    tag: 'laravel',
-    title: "Sexy & Safe",
-    description: "Laravel website",
-    image: 'project-5.jpg',
-  }
-]
-
 </script>
 
 <template>
@@ -67,7 +29,6 @@ const projectList = [{
     </div>
 
     <div class="container">
-
 
       <div v-if="store.projects.error">Oops! Error encountered: {{ store.projects.error.message }}</div>
 
