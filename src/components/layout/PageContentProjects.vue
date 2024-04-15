@@ -1,13 +1,20 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+import { store } from '@/store.js'
 import ProjectItem from '../elements/ProjectItem.vue';
 import FilterLink from '../elements/FilterLink.vue';
-import { store } from '@/store.js'
 
-import { onMounted } from 'vue'
+let projectLimit = ref(3)
+let buttonShown = ref(true)
 
 onMounted(() => {
   store.getProjects();
 })
+
+function increaseProjectLimit() {
+  projectLimit.value += 3
+  buttonShown.value = projectLimit.value < store.projects.filteredData.slice(0, projectLimit).length
+}
 
 </script>
 
@@ -32,11 +39,11 @@ onMounted(() => {
 
       <div v-if="store.projects.error">Oops! Error encountered: {{ store.projects.error.message }}</div>
 
-      <template v-else-if="store.projects.data">
+      <template v-else-if="store.projects.filteredData">
         <TransitionGroup name="list" tag="div" class="row">
 
-          <template v-for="(project) in store.projects.data" :key="project.sys.id">
-            <ProjectItem v-bind="project" v-if="store.filterValue == project.tag || store.filterValue == '*'"/>
+          <template v-for="(project) in store.projects.filteredData.slice(0, projectLimit)" :key="project.sys.id">
+            <ProjectItem v-bind="project" />
           </template>
 
           </TransitionGroup>
@@ -44,8 +51,8 @@ onMounted(() => {
 
       <div v-else>Loading...</div>
 
-      <div class="more_btn">
-        <a class="main_btn" href="#">Load More Items</a>
+      <div v-show="buttonShown" class="more_btn">
+        <a class="main_btn" @click="increaseProjectLimit">Load More Items</a>
       </div>
 
     </div>
