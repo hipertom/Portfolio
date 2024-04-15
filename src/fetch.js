@@ -9,16 +9,17 @@ const client = createClient({
 
 export function fetchProjects() {
   const data = ref(null)
+  const filteredData = ref(null)
   const error = ref(null)
 
   client.getEntries({
       content_type: 'project',
     })
     .then((res) => res)
-    .then((json) => (data.value = json.items))
+    .then((json) => (data.value = filteredData.value = json.items))
     .catch((err) => (error.value = err))
 
-  return { data, error }
+  return { data, filteredData, error }
 }
 
 export function fetchInformation() {

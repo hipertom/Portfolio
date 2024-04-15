@@ -7,7 +7,7 @@ defineProps({
 })
 
 function filter(value) {
-  store.filterValue = value
+  store.filterProjects(value)
 }
 </script>
 
