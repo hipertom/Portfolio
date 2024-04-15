@@ -1,5 +1,5 @@
 <script setup>
-import { ref} from 'vue'
+import { ref, computed } from 'vue'
 import SocialIcons from "./../elements/SocialIcons.vue"
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCakeCandles, faEarthEurope, faLanguage, faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -18,6 +18,12 @@ function rand(previous, range) {
   let temp = Math.floor(Math.random() * range)
   return temp == previous ? rand(previous, range) : temp
 }
+
+const age = computed(() => {
+  var ageDifMs = Date.now() - new Date("1994-07-06").getTime();
+  var ageDate = new Date(ageDifMs);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+})
 
 </script>
 
@@ -38,7 +44,7 @@ function rand(previous, range) {
                 <p>{{ intros[randomIntro] }}</p>
 
                 <ul class="list basic_info">
-                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faCakeCandles" /></span> 29 years old</li>
+                  <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faCakeCandles" /></span> {{ age }} years old</li>
                   <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faLocationDot" /></span> Zoetermeer</li>
                   <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faEarthEurope" /></span> The Netherlands</li>
                   <li><span style="width: 25px; display: inline-block;"><FontAwesomeIcon :icon="faLanguage" /></span> Dutch & English</li>
